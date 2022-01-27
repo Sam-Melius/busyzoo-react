@@ -48,12 +48,12 @@ function App() {
 
       </section>
       <section className='parade'>
-        <Parade/>
+        <Parade animalArray={animalArray} />
         <div>
-          <button>Add Dragon</button>
-          <button>Add T-Rex</button>
-          <button>Add Gorilla</button>
-          <button>Add Squid</button>
+          <button onClick={handleAddDragon}>Add Dragon</button>
+          <button onClick={handleAddTrex}>Add T-Rex</button>
+          <button onClick={handleAddGorilla}>Add Gorilla</button>
+          <button onClick={handleAddSquid}>Add Squid</button>
 
         </div>
 
