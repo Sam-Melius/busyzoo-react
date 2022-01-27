@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import Parade from './Parade';
 
 function App() {
 
@@ -14,6 +15,19 @@ function App() {
   };
 
   const [animalArray, setAnimalArray] = useState('dragon', 't-rex');
+
+  function handleAddDragon() {
+    setAnimalArray([...animalArray, 'dragon']);
+  }
+  function handleAddTrex() {
+    setAnimalArray([...animalArray, 't-rex']);
+  }
+  function handleAddGorilla() {
+    setAnimalArray([...animalArray, 'gorilla']);
+  }
+  function handleAddSquid() {
+    setAnimalArray([...animalArray, 'squid']);
+  }
 
   return (
     <div className="App">
@@ -34,8 +48,13 @@ function App() {
 
       </section>
       <section className='parade'>
+        <Parade/>
         <div>
-          
+          <button>Add Dragon</button>
+          <button>Add T-Rex</button>
+          <button>Add Gorilla</button>
+          <button>Add Squid</button>
+
         </div>
 
       </section>
