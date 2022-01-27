@@ -44,9 +44,6 @@ function App() {
         </div>
 
       </section>
-      <section className='sign'>
-
-      </section>
       <section className='parade'>
         <Parade animalArray={animalArray} />
         <div>
@@ -58,6 +55,10 @@ function App() {
         </div>
 
       </section>
+      <section className='sign'>
+
+      </section>
+      
     </div>
   );
 }
