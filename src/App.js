@@ -13,6 +13,8 @@ function App() {
     fontSize: `${wolfSize}rem`
   };
 
+  const [animalArray, setAnimalArray] = useState('dragon', 't-rex');
+
   return (
     <div className="App">
       <section className='fight'>
@@ -32,6 +34,9 @@ function App() {
 
       </section>
       <section className='parade'>
+        <div>
+          
+        </div>
 
       </section>
     </div>
