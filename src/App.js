@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useState } from 'react';
 import Parade from './Parade';
+import Sign from './Sign';
 
 function App() {
 
@@ -47,7 +48,7 @@ function App() {
 
       </section>
       <section className='sign'>
-        <Sign isOpen={isOpen}/>
+        <Sign isOpen={isOpen} />
         <div>
           <button onClick={() => setIsOpen(false)}>Zoo is Closed</button>
           <button onClick={() => setIsOpen(true)}>Zoo is Open</button>
