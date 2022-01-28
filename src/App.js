@@ -14,13 +14,13 @@ function App() {
     fontSize: `${wolfSize}rem`
   };
 
-  const [animalArray, setAnimalArray] = useState('dragon', 't-rex');
+  const [animalArray, setAnimalArray] = useState('dragon', 'trex');
 
   function handleAddDragon() {
     setAnimalArray([...animalArray, 'dragon']);
   }
   function handleAddTrex() {
-    setAnimalArray([...animalArray, 't-rex']);
+    setAnimalArray([...animalArray, 'trex']);
   }
   function handleAddGorilla() {
     setAnimalArray([...animalArray, 'gorilla']);
@@ -28,6 +28,8 @@ function App() {
   function handleAddSquid() {
     setAnimalArray([...animalArray, 'squid']);
   }
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="App">
@@ -44,6 +46,14 @@ function App() {
         </div>
 
       </section>
+      <section className='sign'>
+        <Sign isOpen={isOpen}/>
+        <div>
+          <button onClick={() => setIsOpen(false)}>Zoo is Closed</button>
+          <button onClick={() => setIsOpen(true)}>Zoo is Open</button>
+        </div>
+
+      </section>
       <section className='parade'>
         <Parade animalArray={animalArray} />
         <div>
@@ -55,9 +65,7 @@ function App() {
         </div>
 
       </section>
-      <section className='sign'>
-
-      </section>
+      
       
     </div>
   );
