@@ -34,28 +34,28 @@ function App() {
 
   return (
     <div className="App">
-      <section className='fight'>
+      <section className='fight'>Monster Battle!!!
         <div className='bat'>
           <p style={batStyle}> 🦇</p>
-          <button onClick={() => setBatSize(batSize + 1)}>Bat consumes blood and gets stronger!</button>
-          <button onClick={() => setWolfSize(wolfSize - 1)}>Bat bites wolf!!!</button>
+          <button className={'bat-good'} onClick={() => setBatSize(batSize + 1)}>Bat drinks blood! Bat gets stronger!!!</button>
+          <button className={'bat-bad'} onClick={() => setWolfSize(wolfSize - 1)}>Bat bites wolf!!!</button>
         </div>
         <div className='wolf'>
           <p style={wolfStyle}> 🐺</p>
-          <button onClick={() => setWolfSize(wolfSize + 1)}>Its a full moon! Wolf gets stronger!!!</button>
-          <button onClick={() => setBatSize(batSize - 1)}>Wolf claws bat!!!</button>
+          <button className={'wolf-good'} onClick={() => setWolfSize(wolfSize + 1)}>Its a full moon! Wolf gets stronger!!!</button>
+          <button className={'wolf-bad'}onClick={() => setBatSize(batSize - 1)}>Wolf claws bat!!!</button>
         </div>
 
       </section>
       <section className='sign'>
         <Sign isOpen={isOpen} />
         <div>
-          <button onClick={() => setIsOpen(false)}>Zoo is Closed</button>
-          <button onClick={() => setIsOpen(true)}>Zoo is Open</button>
+          <button className={'closed'} onClick={() => setIsOpen(false)}>Zoo is Closed</button>
+          <button className={'open'} onClick={() => setIsOpen(true)}>Zoo is Open</button>
         </div>
 
       </section>
-      <section className='parade'>
+      <section className='parade'>Animal Parade!
         <Parade animalArray={animalArray} />
         <div>
           <button onClick={handleAddDragon}>Add Dragon</button>

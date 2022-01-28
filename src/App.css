@@ -42,7 +42,10 @@
   justify-content: center;
   align-items: center;
   font-size: 5rem;
-  background-color: aquamarine;
+  background-color: burlywood;
+  flex-direction: column;
+  font-family: cursive;
+  color:slateblue;
 }
 
 .fight {
@@ -50,6 +53,49 @@
   justify-content: center;
   align-items: center;
   background-color: darkred;
-  height: 33%;
+  flex-direction: row;
+  font-family:monospace;
+  font-size: 3rem;
+  color: green;
+  
 }
 
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+  font-size: 5rem;
+  flex-direction: column;
+  color: yellow;
+  font-family: fantasy;
+}
+button {
+  color:whitesmoke;
+  background-color: black;
+  font-size: 1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px;
+}
+
+.open {
+  background-color: yellowgreen;
+  color: white;
+  font-size: 2rem;
+}
+
+.closed {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+}
+
+.bat-good, .wolf-good {
+  color: yellowgreen;
+  background-color: slategray;
+
+}
+
+.bat-bad, .wolf-bad {
+  color: red;
+}
