@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.parade {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  background-color: aquamarine;
+}
+
+.fight {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkred;
+  height: 33%;
+}
+

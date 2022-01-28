@@ -15,7 +15,7 @@ function App() {
     fontSize: `${wolfSize}rem`
   };
 
-  const [animalArray, setAnimalArray] = useState('dragon', 'trex');
+  const [animalArray, setAnimalArray] = useState(['dragon', 'trex', 'gorilla', 'squid']);
 
   function handleAddDragon() {
     setAnimalArray([...animalArray, 'dragon']);
