@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function AnimalPic(props) {
+export default function AnimalPic({ animalName }) {
   return <span>
-    {props.animalName === 'dragon' && '🐉'}
-    {props.animalName === 'trex' && '🦖'}
-    {props.animalName === 'gorilla' && '🦍'}
-    {props.animalName === 'squid' && '🦑'}
+    {animalName === 'dragon' && '🐉'}
+    {animalName === 'trex' && '🦖'}
+    {animalName === 'gorilla' && '🦍'}
+    {animalName === 'squid' && '🦑'}
 
   </span>;
 }
