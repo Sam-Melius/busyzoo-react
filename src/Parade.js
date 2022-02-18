@@ -1,10 +1,10 @@
 import React from 'react';
 import AnimalPic from './AnimalPic';
 
-export default function Parade(props) {
+export default function Parade({ animalArray }) {
   
   return <div>
-    {props.animalArray.map((animal, i) =>
+    {animalArray.map((animal, i) =>
       <AnimalPic key={animal + i} animalName={animal} />)} 
 
   </div>;
